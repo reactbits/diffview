@@ -1,0 +1,71 @@
+.diff * {
+	box-sizing: border-box;
+}
+
+.diff {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	color: #505050;
+	font-size: 14px;
+}
+
+.diff:last-child {
+	margin: 0;
+}
+
+.diff header {
+	background-color: #f7f7f7;
+	font-size: 18px;
+	padding: 15px;
+	font-weight: 600;
+}
+
+.diff .filename {
+}
+
+.diff .adds {
+	color: #00ff00;
+	margin-right: 10px;
+}
+
+.diff .dels {
+	color: #ff0000;
+	margin-right: 10px;
+}
+
+.diff table {
+	border-collapse: collapse;
+	font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+	width: 100%;
+}
+
+.diff td {
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+.diff .nostretch {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.diff .chunk td {
+	padding: 15px 10px;
+}
+
+.diff .chunk {
+	background-color: #f4f7fb;
+	color: #bbb;
+}
+
+.diff .add {
+	background-color: #dbffdb;
+	font-weight: 600;
+}
+
+.diff .del {
+	background-color: #ffdddd;
+	font-weight: 600;
+}

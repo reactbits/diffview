@@ -26,6 +26,7 @@
   "homepage": "https://github.com/reactbits/diffview#readme",
   "dependencies": {
     "classnames": "^2.2.3",
+    "lang-map": "^0.4.0",
     "lodash": "^4.0.0",
     "parse-diff": "^0.3.1",
     "react": "^0.14.6",
