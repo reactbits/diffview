@@ -3,8 +3,8 @@ import Change from './change';
 import style from './style';
 
 export default function Chunk(props) {
-	const changes = props.changes.map(change => {
-		return <Change {...change} lang={props.lang}/>;
+	const changes = props.changes.map((change, i) => {
+		return <Change key={i} {...change} lang={props.lang}/>;
 	});
 	return (
 		<tbody>

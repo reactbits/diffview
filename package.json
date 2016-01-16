@@ -1,6 +1,6 @@
 {
   "name": "react-diffview",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React component to display unified diffs.",
   "main": "lib/index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "lang-map": "^0.4.0",
     "lodash": "^4.0.0",
     "parse-diff": "^0.3.2",
-    "prismjs-package": "^0.6.1",
+    "prismjs-package": "^0.6.2",
     "react": "^0.14.6",
     "react-dom": "^0.14.6"
   },

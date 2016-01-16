@@ -60,6 +60,13 @@
 	color: #bbb;
 }
 
+.diff .change pre {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
 .diff .add {
 	background-color: #dbffdb;
 	font-weight: 600;

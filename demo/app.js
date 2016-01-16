@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import DiffView from '../src';
 import qwest from 'qwest';
+import _ from 'lodash';
 
 const contentLinks = [
 	{
+		url: 'https://api.github.com/repos/reactbits/diffview/commits/0f73f850f7bebfc90ee641501eed7889d6f11b45',
+		headers: {
+			accept: 'application/vnd.github.diff',
+		},
+		label: 'github',
+	},
+	{
 		url: '/content/simple.diff',
-		label: 'Simple',
+		label: 'simple',
 	},
 ];
 
@@ -14,12 +22,17 @@ export default class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { content: '' };
-		this.load(contentLinks[0].url);
+		this.load(contentLinks[0]);
 	}
 
-	load(url) {
-		qwest.get(url).then((xhr, content) => {
-			this.setState({ content });
+	load(data) {
+		const options = { cache: true, headers: data.headers };
+		qwest.get(data.url, null, options).then((xhr, content) => {
+			if (_.isObject(content) && _.isArray(content.files)) {
+				this.setState({ content: content.files });
+			} else {
+				this.setState({ content });
+			}
 		});
 	}
 
@@ -30,7 +43,7 @@ export default class App extends Component {
 				href: t.url,
 				onClick: (e) => {
 					e.preventDefault();
-					this.load(t.url);
+					this.load(t);
 					return false;
 				},
 				style: {
@@ -39,12 +52,20 @@ export default class App extends Component {
 			};
 			return <a {...linkProps}>{t.label}</a>;
 		});
+		let content = null;
+		if (_.isArray(this.state.content)) {
+			content = this.state.content.map(file => {
+				return <DiffView key={file.filename} source={file.patch}/>;
+			});
+		} else {
+			content = <DiffView source={this.state.content}/>;
+		}
 		return (
 			<Grid className="app">
 				<Row>
 					<Col md={8}>
 						<div>{items}</div>
-						<DiffView source={this.state.content}/>
+						{content}
 					</Col>
 				</Row>
 			</Grid>
