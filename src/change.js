@@ -1,16 +1,18 @@
 import React from 'react';
 import style from './style';
+import highlight from 'prismjs-package';
 
 export default function Change(props) {
 	const ln1 = props.normal ? props.ln1 : props.ln;
 	const ln2 = props.normal ? props.ln2 : props.ln;
 
-	// TODO highlight with prism.js
-	const html = props.content;
+	let html = props.content;
 
-  // try {
-  //   html = highlight(props.lang, props.content).value;
-  // } catch (e) {}
+	try {
+		html = highlight(props.content, props.lang);
+	} catch (e) {
+		console.log('highlight error:', e);
+	}
 
 	return (
 		<tr className={props.type}>

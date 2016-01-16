@@ -17,7 +17,7 @@ function Part(props) {
 	});
 
 	return (
-		<article>
+		<article className={style.diff}>
 			<header>
 				<span className={style.adds}>+++ {additions}</span>
 				<span className={style.dels}>--- {deletions}</span>
