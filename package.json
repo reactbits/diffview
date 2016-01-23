@@ -29,7 +29,7 @@
     "lang-map": "^0.4.0",
     "lodash": "^4.0.0",
     "parse-diff": "^0.3.2",
-    "prismjs-package": "^0.6.2",
+    "prismjs-package": "^0.6.3",
     "react": "^0.14.6",
     "react-dom": "^0.14.6"
   },
@@ -47,7 +47,7 @@
     "cpx": "^1.2.1",
     "css-loader": "^0.23.1",
     "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^3.1.0",
+    "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.15.0",
     "exports-loader": "^0.6.2",
     "express": "^4.13.4",
@@ -65,8 +65,8 @@
     "redbox-react": "^1.2.0",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.11",
-    "webpack-dev-middleware": "^1.5.0",
+    "webpack": "^1.12.12",
+    "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.6.0",
     "webpack-sources": "^0.1.0"
   }
