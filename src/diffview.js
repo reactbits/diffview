@@ -12,9 +12,9 @@ function Part(props) {
 	const ext = extname(fileName);
 	const langs = languages(ext);
 
-	const items = chunks.map((chunk, i) => {
-		return <Chunk key={i} {...chunk} lang={langs[0]}/>;
-	});
+	const items = chunks.map((chunk, i) =>
+		<Chunk key={i} {...chunk} lang={langs[0]}/>
+	);
 
 	return (
 		<article className={style.diff}>
