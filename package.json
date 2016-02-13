@@ -46,7 +46,7 @@
     "cors": "^2.7.1",
     "cpx": "^1.2.1",
     "css-loader": "^0.23.1",
-    "eslint": "^1.10.3",
+    "eslint": "^2.0.0",
     "eslint-config-airbnb": "^5.0.0",
     "eslint-plugin-react": "^3.16.1",
     "exports-loader": "^0.6.3",
