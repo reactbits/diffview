@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import DiffView from '../src';
-import qwest from 'qwest';
 import _ from 'lodash';
 
 const contentLinks = [
 	{
 		url: 'https://api.github.com/repos/reactbits/diffview/commits/0f73f850f7bebfc90ee641501eed7889d6f11b45',
 		headers: {
-			accept: 'application/vnd.github.diff',
+			Accept: 'application/vnd.github.diff',
 		},
 		label: 'github',
 	},
@@ -26,8 +25,8 @@ export default class App extends Component {
 	}
 
 	load(data) {
-		const options = { cache: true, headers: data.headers };
-		qwest.get(data.url, null, options).then((xhr, content) => {
+		const options = { headers: data.headers };
+		fetch(data.url, options).then((xhr, content) => {
 			if (_.isObject(content) && _.isArray(content.files)) {
 				this.setState({ content: content.files });
 			} else {
