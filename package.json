@@ -27,7 +27,7 @@
   "dependencies": {
     "classnames": "^2.2.3",
     "lang-map": "^0.4.0",
-    "lodash": "^4.3.0",
+    "lodash": "^4.4.0",
     "parse-diff": "^0.3.2",
     "prismjs-package": "^0.6.12",
     "react": "^0.14.7",
