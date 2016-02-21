@@ -47,7 +47,7 @@
     "cpx": "^1.2.1",
     "css-loader": "^0.23.1",
     "eslint": "^2.2.0",
-    "eslint-config-airbnb": "^5.0.1",
+    "eslint-config-airbnb": "^6.0.0",
     "eslint-plugin-react": "^4.0.0",
     "exports-loader": "^0.6.3",
     "express": "^4.13.4",
