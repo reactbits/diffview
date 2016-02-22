@@ -12,12 +12,12 @@ export default function Change(props) {
 
 	try {
 		html = highlight(props.content, props.lang);
-		contentCell = <td dangerouslySetInnerHTML={{ __html: html }}/>;
+		contentCell = <td dangerouslySetInnerHTML={{ __html: html }} />;
 	} catch (e) {
 		console.log('highlight error:', e);
 		contentCell = (
 			<td>
-				<pre dangerouslySetInnerHTML={{ __html: html }}/>
+				<pre dangerouslySetInnerHTML={{ __html: html }} />
 			</td>
 		);
 	}

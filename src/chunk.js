@@ -4,7 +4,7 @@ import style from './style';
 
 export default function Chunk(props) {
 	const changes = props.changes.map((change, i) =>
-		<Change key={i} {...change} lang={props.lang}/>
+		<Change key={i} {...change} lang={props.lang} />
 	);
 	return (
 		<tbody>

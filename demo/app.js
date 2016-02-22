@@ -54,10 +54,10 @@ export default class App extends Component {
 		let content = null;
 		if (_.isArray(this.state.content)) {
 			content = this.state.content.map(file =>
-				<DiffView key={file.filename} source={file.patch}/>
+				<DiffView key={file.filename} source={file.patch} />
 			);
 		} else {
-			content = <DiffView source={this.state.content}/>;
+			content = <DiffView source={this.state.content} />;
 		}
 		return (
 			<Grid className="app">

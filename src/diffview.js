@@ -13,7 +13,7 @@ function Part(props) {
 	const langs = languages(ext);
 
 	const items = chunks.map((chunk, i) =>
-		<Chunk key={i} {...chunk} lang={langs[0]}/>
+		<Chunk key={i} {...chunk} lang={langs[0]} />
 	);
 
 	return (
@@ -32,10 +32,10 @@ function Part(props) {
 
 export function DiffView(props) {
 	if (!(props.diff || props.source)) {
-		return <div/>;
+		return <div />;
 	}
 	const diff = props.diff || parse(props.source);
-	const content = diff.map((p, i) => <Part key={i} {...p}/>);
+	const content = diff.map((p, i) => <Part key={i} {...p} />);
 	return (
 		<div>
 			{content}
