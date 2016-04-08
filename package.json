@@ -27,15 +27,15 @@
   "dependencies": {
     "classnames": "^2.2.3",
     "lang-map": "^0.4.0",
-    "lodash": "^4.8.1",
+    "lodash": "^4.8.2",
     "parse-diff": "^0.3.2",
     "prismjs-package": "^0.7.2",
-    "react": "^0.14.8",
+    "react": "^15.0.0",
     "react-dom": "^15.0.0"
   },
   "devDependencies": {
-    "jquery": "^2.2.2",
+    "jquery": "^2.2.3",
     "react-bootstrap": "^0.28.5",
-    "react-devpack": "^0.1.11"
+    "react-devpack": "^0.1.13"
   }
 }
