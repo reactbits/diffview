@@ -3,7 +3,7 @@ import Chunk from './chunk';
 import parse from 'parse-diff';
 import { extname } from 'path';
 import { languages } from 'lang-map';
-import style from './style';
+import style from './style.scss';
 
 function Part(props) {
 	const { from, to, additions, deletions, chunks } = props;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Change from './change';
-import style from './style';
+import style from './style.scss';
 
 export default function Chunk(props) {
 	const changes = props.changes.map((change, i) =>
