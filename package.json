@@ -29,7 +29,7 @@
     "lang-map": "^0.4.0",
     "lodash": "^4.11.2",
     "parse-diff": "^0.3.2",
-    "prismjs-package": "^0.7.4",
+    "prismjs-package": "^0.7.5",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   },
