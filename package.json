@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/reactbits/diffview#readme",
   "dependencies": {
-    "classnames": "^2.2.4",
+    "classnames": "^2.2.5",
     "lang-map": "^0.4.0",
-    "lodash": "^4.11.1",
+    "lodash": "^4.11.2",
     "parse-diff": "^0.3.2",
     "prismjs-package": "^0.7.4",
     "react": "^15.0.2",
@@ -36,6 +36,6 @@
   "devDependencies": {
     "jquery": "^2.2.3",
     "react-bootstrap": "^0.29.3",
-    "react-devpack": "^0.1.24"
+    "react-devpack": "^0.1.25"
   }
 }
