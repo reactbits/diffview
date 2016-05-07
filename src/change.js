@@ -15,11 +15,7 @@ export default function Change(props) {
 		contentCell = <td dangerouslySetInnerHTML={{ __html: html }} />;
 	} catch (e) {
 		console.log('highlight error:', e);
-		contentCell = (
-			<td>
-				<pre dangerouslySetInnerHTML={{ __html: html }} />
-			</td>
-		);
+		contentCell = <td><pre dangerouslySetInnerHTML={{ __html: html }} /></td>;
 	}
 
 	const className = classNames(style[props.type], style.change);
