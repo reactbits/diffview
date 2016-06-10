@@ -34,7 +34,7 @@
     "react-dom": "^15.1.0"
   },
   "devDependencies": {
-    "jquery": "^2.2.4",
+    "jquery": "^3.0.0",
     "react-bootstrap": "^0.29.4",
     "react-devpack": "^0.1.33"
   }
