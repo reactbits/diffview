@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import style from './style.scss';
 import highlight from 'prismjs-package';
+import style from './style.scss';
 
 export default function Change(props) {
 	const ln1 = props.normal ? props.ln1 : props.ln;

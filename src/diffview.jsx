@@ -1,8 +1,8 @@
 import React from 'react';
-import Chunk from './chunk';
 import parse from 'parse-diff';
 import { extname } from 'path';
 import { languages } from 'lang-map';
+import Chunk from './chunk';
 import style from './style.scss';
 
 function Part(props) {
