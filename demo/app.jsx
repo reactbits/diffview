@@ -1,7 +1,7 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import DiffView from '../src';
-import _ from 'lodash';
 
 const contentLinks = [
 	{
