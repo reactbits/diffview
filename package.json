@@ -29,13 +29,13 @@
     "lang-map": "^0.4.0",
     "lodash": "^4.15.0",
     "parse-diff": "^0.3.2",
-    "prismjs-package": "^0.7.14",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "prismjs-package": "^0.7.15",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   },
   "devDependencies": {
     "jquery": "^3.1.0",
     "react-bootstrap": "^0.30.2",
-    "react-devpack": "^0.1.52"
+    "react-devpack": "^0.1.53"
   }
 }
