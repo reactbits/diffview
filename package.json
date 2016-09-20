@@ -30,7 +30,7 @@
     "lodash": "^4.16.0",
     "parse-diff": "^0.3.2",
     "prismjs-package": "^0.7.17",
-    "react": "^15.3.1",
+    "react": "^15.3.2",
     "react-dom": "^15.3.1"
   },
   "devDependencies": {
