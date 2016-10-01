@@ -36,7 +36,7 @@ export default class App extends Component {
   }
 
   render() {
-    const items = contentLinks.map(t => {
+    const items = contentLinks.map((t) => {
       const linkProps = {
         key: t.url,
         href: t.url,
