@@ -1,6 +1,6 @@
 {
   "name": "react-diffview",
-  "version": "0.1.36",
+  "version": "0.1.37",
   "description": "React component to display unified diffs.",
   "main": "lib/index.js",
   "scripts": {
