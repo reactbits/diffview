@@ -1,3 +1,4 @@
+import { map } from 'lodash';
 import React from 'react';
 import parse from 'parse-diff';
 import { extname } from 'path';
@@ -12,9 +13,7 @@ function Part(props) {
   const ext = extname(fileName);
   const langs = languages(ext);
 
-  const items = chunks.map((chunk, i) =>
-    <Chunk key={i} {...chunk} lang={langs[0]} />
-  );
+  const items = map(chunks, (chunk, i) => <Chunk key={i} {...chunk} lang={langs[0]} />);
 
   return (
     <article className={style.diff}>
@@ -35,7 +34,7 @@ export function DiffView(props) {
     return <div />;
   }
   const diff = props.diff || parse(props.source);
-  const content = diff.map((p, i) => <Part key={i} {...p} />);
+  const content = map(diff, (p, i) => <Part key={i} {...p} />);
   return (
     <div>
       {content}
