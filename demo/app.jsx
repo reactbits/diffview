@@ -26,7 +26,7 @@ export default class App extends Component {
 
   load(data) {
     const options = { headers: data.headers };
-    fetch(data.url, options).then((xhr, content) => {
+    fetch(data.url, options).then(res => res.text()).then((content) => {
       if (_.isObject(content) && _.isArray(content.files)) {
         this.setState({ content: content.files });
       } else {
